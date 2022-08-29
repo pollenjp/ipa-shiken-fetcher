@@ -1,0 +1,498 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+
+    <head>
+        <meta name="viewport" content="width=960,user-scalable=yes">
+        <link rel="alternate" media="only screen and (max-width:640px)" href="https://www.ap-siken.com/s/">
+        <link rel="canonical" href="https://www.ap-siken.com/">
+        <meta charset="Shift_JIS">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+        <meta name="google-site-verification" content="HGddmtvyXBb21izZTXtaL72z0DL5E4YpzZkkilvQlG8" />
+        <meta name="keywords" content="応用情報技術者">
+        <meta property="og:site_name" content="応用情報技術者試験ドットコム">
+        <meta property="og:title" content="応用情報技術者試験ドットコム">
+        <meta property="og:description" name="description"
+            content="応用情報技術者試験の解説でNo.1を目指すサイト。試験の最新動向や過去問題の解説など応用情報技術者に関係する情報を発信しています。トップページの応用情報後術者過去問題一問一答で理解度を確認しましょう。">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="https://www.ap-siken.com/img/ogimage.png">
+        <meta property="og:url" content="http://www.ap-siken.com/">
+        <link rel="stylesheet" href="/ap.css">
+        <link rel="shortcut icon" href="/favicon.ico">
+        <title>応用情報技術者試験ドットコム</title>
+        <style>
+            .selectList [class^="li"],
+            .selectList .img {
+                margin-left: 5px !important
+            }
+
+            .mondai {
+                font-size: 13px;
+                line-height: 1.8;
+                padding: 3px 5px 3px 1em
+            }
+
+            .kako .anslink {
+                margin: 1em 5px 1em 0
+            }
+
+            .col1 li {
+                width: 105px;
+                float: left
+            }
+
+            .col2 li {
+                width: 240px;
+                float: left
+            }
+
+            .col2 li:nth-child(3) {
+                clear: both
+            }
+
+            .sideColInner {
+                padding: 0
+            }
+
+            .sideColInner .mobilelink {
+                text-align: center;
+                font-size: 12px
+            }
+
+            a.ansbtn {
+                display: inline-block;
+                position: relative;
+                background: #ffa737;
+                background: linear-gradient(#ffa737 48%, #f69b14 52%);
+                color: #FFF;
+                font-size: 13px;
+                padding: 5px 15px;
+                border: 2px solid #FFF;
+                border-radius: 4px;
+                box-shadow: 0px 1px 3px rgba(0, 0, 0, .2), inset -1px -1px 5px 1px rgba(255, 255, 255, .5)
+            }
+
+            a.ansbtn::before {
+                content: "\027A1";
+                background: #5eb925;
+                background: linear-gradient(135deg, #7cb92e, #7dc012);
+                border-radius: 4px;
+                margin-right: 5px;
+                padding: 0px 3px;
+                font-size: 11px;
+                box-shadow: 0 0 2px rgba(0, 0, 0, .3)
+            }
+
+            a.ansbtn::after {
+                content: "ANSWER";
+                position: absolute;
+                bottom: -3px;
+                right: 3px;
+                font-size: 10px;
+                letter-spacing: 0;
+                color: rgba(255, 255, 255, .4)
+            }
+
+            a.ansbtn:hover {
+                opacity: .9;
+                text-decoration: none
+            }
+
+        </style>
+    </head>
+
+    <body>
+
+        <script>
+            if (typeof localStorage !== undefined && localStorage.getItem('NIGHTMODE')) document.body.className += ' night';
+        </script>
+
+        <!-- HEADER START -->
+        <header id="headerWrap" class="centeringBox">
+            <div id="header" class="centeringContent">
+                <h1>応用情報技術者 試験情報＆徹底解説</h1>
+                <a href="/"><img src="/img/titlelogo.png" width="500" height="66" id="logo" alt="応用情報技術者試験ドットコム"
+                        title="応用情報技術者試験ドットコム トップページ"></a>
+                <div id="countdown"></div>
+            </div>
+        </header>
+
+        <nav id="headerMenuWrap" class="centeringBox">
+            <div id="headerMenu" class="centeringContent">
+                <ul>
+                    <li id="fastMenuBtn"><a href="/kakomon/04_haru/" title="過去問 解説">過去問題解説</a>
+                    <li><a href="/apis.html" title="応用情報技術者とは">応用情報技術者とは</a>
+                    <li><a href="/apkakomon.php" title="過去問道場">過去問道場</a>
+                        <ul>
+                            <li><a href="/apkakomon.php">過去問道場（午前）</a>
+                            <li><a href="/apkakomon_pm.php">過去問道場（午後）<i class="new2"></i></a>
+                        </ul>
+                    <li><a href="/apbbs.php" title="応用情報技術者掲示板">掲示板</a>
+                    <li><a href="/aptext.html" title="おすすめ参考書・問題集">参考書・問題集</a>
+                </ul>
+            </div>
+        </nav>
+        <!-- HEADER END -->
+
+        <!-- CONTENT START -->
+        <div id="contentWrap" class="centeringBox">
+            <div id="content" class="centeringContent cf">
+
+                <!--<style>#image10th{text-align:center;background:#e4e0d0;padding:2px 0;margin-bottom:2px}</style>
+<div id="image10th"><img src="/img/10th.png" width="191" height="23" alt="おかげさまで10周年"></div>-->
+
+                <!-- MAINCOL START -->
+                <main id="mainCol">
+                    <div class="main">
+                        <i class="senseiIcon fl"></i>
+                        <div class="sensei">
+                            <p>応用情報技術者試験.comは、応用情報技術者を受験予定の方への情報の提供や、合格へのサポートを目的としたWebサイトです。<br>
+                                秋期試験の申込みは終了しました。受験票の発送は9/20の予定です。</p>
+                        </div>
+                        <div class="clear"></div>
+
+                        <h2>新着情報</h2>
+                        <dl class="tbl1">
+                            <dt><i class="new"></i><span data-update="1661705901"></span></dt>
+                            <dd>
+                                <p>《<a rel="ugc"
+                                        href="./bbs/3582.html">[3582]&nbsp;過去の試験会場</a>》に新しい投稿がありました。<br>最終投稿者：<b>マスク</b>さん　投稿数：1
+                                </p>
+                            </dd>
+                            <dt><i class="update"></i><span data-update="1661701655"></span></dt>
+                            <dd>
+                                <p>《<a rel="ugc"
+                                        href="./bbs/3581.html">[3581]&nbsp;平成27年春期午後問4&nbsp;&nbsp;&nbsp;設問3</a>》に新しい投稿がありました。<br>最終投稿者：<b>GinSana</b>さん　投稿数：2
+                                </p>
+                            </dd>
+                            <dt><i class="update"></i><span data-update="1661645582"></span></dt>
+                            <dd>
+                                <p>《<a rel="ugc"
+                                        href="./bbs/3580.html">[3580]&nbsp;FWはホスト、ノードと呼んでいいのか？</a>》に新しい投稿がありました。<br>最終投稿者：<b>サディス</b>さん　投稿数：3
+                                </p>
+                            </dd>
+                            <dt><i class="update"></i><span data-update="1661637900"></span></dt>
+                            <dd>
+                                <p>《<a rel="ugc"
+                                        href="./bbs/3579.html">[3579]&nbsp;午前問題の並び順</a>》に新しい投稿がありました。<br>最終投稿者：<b>追い詰められた者</b>さん　投稿数：4
+                                </p>
+                            </dd>
+
+                            <dt><i class="new"></i>2022.4.20</dt>
+                            <dd>
+                                <p>令和4年春期試験の午前問題をアップしました。<br>
+                                    <i class="r_arrow"></i><a href="/kakomon/04_haru/">応用情報技術者　令和4年春期試験</a><i
+                                        class="new2"></i>
+                                </p>
+                            </dd>
+
+                            <dt><i class="new"></i>2022.3.30</dt>
+                            <dd>
+                                <p><a href="/apkakomon_pm.php">過去問道場の午後版</a>を公開しました<i
+                                        class="new2"></i>。テスト運用しながら徐々に機能追加していきます。</p>
+                            </dd>
+
+                            <dt><i class="news"></i>2021.11.6</dt>
+                            <dd>
+                                <p>応用情報技術者試験の令和4年(2022年)版の参考書・問題集の発売日が決定してきたのでまとめて紹介します。<br>
+                                    <i class="amazon"></i><a rel="nofollow" href="https://amzn.to/3CSKqxk">令和04年【春期】【秋期】
+                                        応用情報技術者 合格教本(12/15発売)</a><br>
+                                    <i class="amazon"></i><a rel="nofollow" href="https://amzn.to/3wlBPke">2022年度版
+                                        ニュースペックテキスト 応用情報技術者(12/18発売)</a><br>
+                                    <i class="amazon"></i><a rel="nofollow" href="https://amzn.to/3mLUIKa">2022 応用情報技術者
+                                        午後問題の重点対策(発売中)</a><br>
+                                    <i class="amazon"></i><a rel="nofollow" href="https://amzn.to/3qknZO2">キタミ式イラストIT塾
+                                        応用情報技術者 令和04年(12/13発売)</a>
+                                </p>
+                            </dd>
+
+                        </dl>
+                        <div class="anslink"><a href="kousininfo.html"><i class="r_arrow"></i>もっと見る</a></div>
+
+                        <h2>応用情報技術者　一問一答</h2>
+                        <div class="kako">
+                            <div class="mondai">クライアントサーバシステムにおけるストアドプロシージャに関する記述のうち，<b>誤っているもの</b>はどれか。</div>
+                            <div class="anslink">平成21年春期　応用情報技術者 問31 [テクノロジ系]</div>
+                            <div class="ansbg">
+                                <ul class="selectList cf col0">
+                                    <li class="lia">機密性の高いデータに対する処理を特定のプロシージャ呼出しに限定することによって，セキュリティを向上させることができる。</li>
+                                    <li class="lii">システム全体に共通な処理をプロシージャとして格納することによって，処理の標準化を行うことができる。</li>
+                                    <li class="liu">データベースへのアクセスを細かい単位でプロシージャ化することによって，処理性能(スループット)を向上させることができる。</li>
+                                    <li class="lie">複数のSQL文から成る手続を1回の呼出しで実行できるので，クライアントとサーバ間の通信回数を減らすことができる。</li>
+                                </ul>
+                            </div>
+                            <div class="img_margin"><a href="./kakomon/21_haru/q31.html" class="ansbtn">解答ページへ</a>
+                            </div>
+                        </div>
+                        <div class="anslink"><i class="r_arrow"></i><a href="apkakomon.php">Webアプリ「過去問道場」に挑戦</a></div>
+                        <h2>応用情報技術者 最新情報</h2>
+                        <dl class="tbl2">
+
+                            <dt>4月17日</dt>
+                            <dd>
+                                <p>令和4年度春期、応用情報技術者試験が実施されました。</p>
+                            </dd>
+
+                            <dt>10月10日</dt>
+                            <dd>
+                                <p>令和3年度秋期、応用情報技術者試験が実施されました。</p>
+                            </dd>
+
+                            <dt>4月18日</dt>
+                            <dd>
+                                <p>令和3年度春期、応用情報技術者試験が実施されました。</p>
+                            </dd>
+
+                            <dt>10月18日</dt>
+                            <dd>
+                                <p>令和2年度秋期、応用情報技術者試験が実施されました。</p>
+                            </dd>
+
+                            <dt>10月20日</dt>
+                            <dd>
+                                <p>令和元年度秋期、応用情報技術者試験が実施されました。</p>
+                            </dd>
+
+                        </dl>
+                        <div class="anslink"><a href="sikeninfo.html"><i class="r_arrow"></i>もっと見る</a></div>
+
+                        <h2>管理人の一言</h2>
+                        <p>2021.12.28 途方もないプロジェクトだったけど3年かけてやり遂げました！！応用情報技術者試験午後問題の全解説です。これはマジで自分を褒めてあげたい。<br>
+                            私一人の力では到底なし得なかったことです。これまで協力して下さったライターの方々にも多大な感謝を申し上げます。</p>
+
+                        <div class="blackboard">
+                            <p>応用情報技術者試験.comのモットー </p>
+                            <ul>
+                                <li>経験から感じた攻略方法を解説</li>
+                                <li>応用情報技術者に徹底的にこだわる</li>
+                                <li>できるだけ丁寧な解説</li>
+                                <li>目指すは応用情報技術者No.1サイト</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </main>
+                <!-- MAINCOL END -->
+
+                <!-- SIDECOL START -->
+                <nav id="sideCol">
+                    <div class="sideColInner">
+                        <div class="ads300 banner"><a rel="sponsored"
+                                href="https://studying.jp/oyojoho/?argument=HNxxqMDA&dmai=a61e927be1a486"
+                                onClick="ga('send','event','studying.jp','click','300x250');"><img
+                                    src="/img/banner/300x250.jpg" width="300" height="250" alt="スタディング 応用情報技術者講座"></a>
+                        </div>
+                        <div class="img_margin" style="height:25px"><a
+                                href="https://twitter.com/kakomon_doujou?ref_src=twsrc%5Etfw"
+                                class="twitter-follow-button" data-size="large" data-lang="ja"
+                                data-show-count="false">Follow @kakomon_doujou</a>
+                            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        </div>
+                        <div id="searchBox">
+                            <script async
+                                src="https://cse.google.com/cse.js?cx=partner-pub-5061380080248584:9993104505"></script>
+                            <div class="gcse-search"></div>
+                        </div>
+                        <h3>スマートフォン版</h3>
+                        <div class="box mobilelink"><a href="/s/"><img
+                                    src="https://chart.apis.google.com/chart?chs=100x100&chld=M|0&cht=qr&chl=https://www.ap-siken.com/s/"
+                                    width="100" height="100"></a><br>https://www.ap-siken.com/s/</div>
+                        <h3>応用情報技術者試験情報</h3>
+                        <ul class="box menu">
+                            <li><a href="/apis.html" title="応用情報技術者とは">応用情報技術者とは</a>
+                            <li><a href="/apmerit.html" title="応用情報技術者のメリット">応用情報技術者メリット</a>
+                            <li><a href="/apgaiyou.html" title="試験の概要">試験の概要</a>
+                            <li><a href="/apkeisiki.html" title="試験の形式と合格基準">試験の形式と合格基準</a>
+                            <li><a href="/aphani.html" title="出題範囲">試験の出題範囲</a>
+                            <li><a href="/apnanido.html" title="応用情報技術者の難易度">応用情報技術者の難易度</a>
+                            <li><a href="/aptext.html" title="おすすめ参考書・問題集">おすすめ参考書＆問題集</a>
+                            <li><a href="/apkakomon.php" title="過去問道場">Webアプリ過去問道場</a>
+                            <li><a href="/apbbs.php" title="掲示板">応用情報技術者 掲示板</a>
+                            <li><a href="/aptoukei.html" title="統計情報">統計情報</a>
+                            <li><a href="/apfaq.html" title="FAQ">応用情報技術者 FAQ</a>
+                        </ul>
+                        <h3>応用情報技術者 過去問題&amp;解説</h3>
+                        <ul class="box menu" id="testMenu">
+                            <li><a href="/kakomon/04_haru/" title="令和4年春期">令和4年春期</a>
+                            <li><a href="/kakomon/03_aki/" title="令和3年秋期">令和3年秋期</a>
+                            <li><a href="/kakomon/03_haru/" title="令和3年春期">令和3年春期</a>
+                            <li><a href="/kakomon/02_aki/" title="令和2年秋期">令和2年秋期</a>
+                            <li><a href="/kakomon/01_aki/" title="令和元年秋期">令和元年秋期</a>
+                            <li><a href="/kakomon/31_haru/" title="平成31年春期">平成31年春期</a>
+                            <li><a href="/kakomon/30_aki/" title="平成30年秋期">平成30年秋期</a>
+                            <li><a href="/kakomon/30_haru/" title="平成30年春期">平成30年春期</a>
+                            <li><a href="/kakomon/29_aki/" title="平成29年秋期">平成29年秋期</a>
+                            <li><a href="/kakomon/29_haru/" title="平成29年春期">平成29年春期</a>
+                            <li><a href="/kakomon/28_aki/" title="平成28年秋期">平成28年秋期</a>
+                            <li><a href="/kakomon/28_haru/" title="平成28年春期">平成28年春期</a>
+                            <li><a href="/kakomon/27_aki/" title="平成27年秋期">平成27年秋期</a>
+                            <li><a href="/kakomon/27_haru/" title="平成27年春期">平成27年春期</a>
+                            <li><a href="/kakomon/26_aki/" title="平成26年秋期">平成26年秋期</a>
+                            <li><a href="/kakomon/26_haru/" title="平成26年春期">平成26年春期</a>
+                            <li><a href="/kakomon/25_aki/" title="平成25年秋期">平成25年秋期</a>
+                            <li><a href="/kakomon/25_haru/" title="平成25年春期">平成25年春期</a>
+                            <li><a href="/kakomon/24_aki/" title="平成24年秋期">平成24年秋期</a>
+                            <li><a href="/kakomon/24_haru/" title="平成24年春期">平成24年春期</a>
+                            <li><a href="/kakomon/23_aki/" title="平成23年秋期">平成23年秋期</a>
+                            <li><a href="/kakomon/23_toku/" title="平成23年特別">平成23年特別</a>
+                            <li><a href="/kakomon/22_aki/" title="平成22年秋期">平成22年秋期</a>
+                            <li><a href="/kakomon/22_haru/" title="平成22年春期">平成22年春期</a>
+                            <li><a href="/kakomon/21_aki/" title="平成21年秋期">平成21年秋期</a>
+                            <li><a href="/kakomon/21_haru/" title="平成21年春期">平成21年春期</a>
+                        </ul>
+                        <div class="ads300">
+                            <script async
+                                src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5061380080248584"
+                                crossorigin="anonymous"></script>
+                            <!-- 300x250 AP -->
+                            <ins class="adsbygoogle" style="display:inline-block;width:300px;height:250px"
+                                data-ad-client="ca-pub-5061380080248584" data-ad-slot="5559969278"></ins>
+                            <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+                        </div>
+                        <h3>オリジナル模擬試験</h3>
+                        <ul class="box menu">
+                            <li><a href="/kakomon/01_moshi/" title="オリジナル模擬試験１">模擬試験１</a>
+                            <li><a href="/kakomon/02_moshi/" title="オリジナル模擬試験２">模擬試験２</a>
+                            <li><a href="/kakomon/03_moshi/" title="オリジナル模擬試験３">模擬試験３</a>
+                        </ul>
+                        <h3>シラバス分野別 過去問題</h3>
+                        <ul class="box menu">
+                            <li><a href="/index_te.html" title="テクノロジ系">テクノロジ系</a>
+                            <li><a href="/index_ma.html" title="マネジメント系">マネジメント系</a>
+                            <li><a href="/index_st.html" title="ストラテジ系">ストラテジ系</a>
+                            <li><a href="/index_pm.html" title="午後問題">午後問題の分野別まとめ</a>
+                        </ul>
+                        <h3>ソフトウェア開発技術者 過去問題&amp;解説</h3>
+                        <ul class="box menu">
+                            <li><a href="/kakomon/20_aki/" title="平成20年秋期">平成20年秋期</a>
+                            <li><a href="/kakomon/20_haru/" title="平成20年春期">平成20年春期</a>
+                            <li><a href="/kakomon/19_aki/" title="平成19年秋期">平成19年秋期</a>
+                            <li><a href="/kakomon/19_haru/" title="平成19年春期">平成19年春期</a>
+                            <li><a href="/kakomon/18_aki/" title="平成18年秋期">平成18年秋期</a>
+                            <li><a href="/kakomon/18_haru/" title="平成18年春期">平成18年春期</a>
+                            <li><a href="/kakomon/17_aki/" title="平成17年秋期">平成17年秋期</a>
+                            <li><a href="/kakomon/17_haru/" title="平成17年春期">平成17年春期</a>
+                            <li><a href="/kakomon/16_haru/" title="平成16年春期">平成16年春期</a>
+                            <li><a href="/kakomon/15_haru/" title="平成15年春期">平成15年春期</a>
+                        </ul>
+                        <h3>情報処理試験キーワード集</h3>
+                        <ul class="box keywordtbl">
+                            <li><a href="/keyword/_a.html">A</a><a href="/keyword/_b.html">B</a><a
+                                    href="/keyword/_c.html">C</a><a href="/keyword/_d.html">D</a><a
+                                    href="/keyword/_e.html">E</a><a href="/keyword/_f.html">F</a><a
+                                    href="/keyword/_g.html">G</a><a href="/keyword/_h.html">H</a><a
+                                    href="/keyword/_i.html">I</a><a href="/keyword/_j.html">J</a><a
+                                    href="/keyword/_k.html">K</a><a href="/keyword/_l.html">L</a><a
+                                    href="/keyword/_m.html">M</a><a href="/keyword/_n.html">N</a><a
+                                    href="/keyword/_o.html">O</a>
+                            <li><a href="/keyword/_p.html">P</a><a href="/keyword/_q.html">Q</a><a
+                                    href="/keyword/_r.html">R</a><a href="/keyword/_s.html">S</a><a
+                                    href="/keyword/_t.html">T</a><a href="/keyword/_u.html">U</a><a
+                                    href="/keyword/_v.html">V</a><a href="/keyword/_w.html">W</a><a
+                                    href="/keyword/_x.html">X</a><a href="/keyword/_y.html">Y</a><a
+                                    href="/keyword/_z.html">Z</a><a></a><a></a><a></a><a
+                                    href="/keyword/_other.html">他</a>
+                            <li><a href="/keyword/xa.html">ア</a><a href="/keyword/xi.html">イ</a><a
+                                    href="/keyword/xu.html">ウ</a><a href="/keyword/xe.html">エ</a><a
+                                    href="/keyword/xo.html">オ</a><a href="/keyword/ka.html">カ</a><a
+                                    href="/keyword/ki.html">キ</a><a href="/keyword/ku.html">ク</a><a
+                                    href="/keyword/ke.html">ケ</a><a href="/keyword/ko.html">コ</a><a
+                                    href="/keyword/sa.html">サ</a><a href="/keyword/si.html">シ</a><a
+                                    href="/keyword/su.html">ス</a><a href="/keyword/se.html">セ</a><a
+                                    href="/keyword/so.html">ソ</a>
+                            <li><a href="/keyword/ta.html">タ</a><a href="/keyword/ti.html">チ</a><a
+                                    href="/keyword/tu.html">ツ</a><a href="/keyword/te.html">テ</a><a
+                                    href="/keyword/to.html">ト</a><a href="/keyword/na.html">ナ</a><a
+                                    href="/keyword/ni.html">ニ</a><a href="/keyword/nu.html">ヌ</a><a
+                                    href="/keyword/ne.html">ネ</a><a href="/keyword/no.html">ノ</a><a
+                                    href="/keyword/ha.html">ハ</a><a href="/keyword/hi.html">ヒ</a><a
+                                    href="/keyword/hu.html">フ</a><a href="/keyword/he.html">ヘ</a><a
+                                    href="/keyword/ho.html">ホ</a>
+                            <li><a href="/keyword/ma.html">マ</a><a href="/keyword/mi.html">ミ</a><a
+                                    href="/keyword/mu.html">ム</a><a href="/keyword/me.html">メ</a><a
+                                    href="/keyword/mo.html">モ</a><a href="/keyword/ra.html">ラ</a><a
+                                    href="/keyword/ri.html">リ</a><a href="/keyword/ru.html">ル</a><a
+                                    href="/keyword/re.html">レ</a><a href="/keyword/ro.html">ロ</a><a
+                                    href="/keyword/ya.html">ヤ</a><a href="/keyword/yu.html">ユ</a><a
+                                    href="/keyword/yo.html">ヨ</a><a></a><a href="/keyword/wa.html">ワ</a>
+                        </ul>
+                        <h3>管理人が運営する姉妹サイトの紹介</h3>
+                        <ul class="box menu full">
+                            <li><a href="https://www.itpassportsiken.com/" title="ITパスポート試験ドットコム">ITパスポート試験ドットコム</a>
+                            <li><a href="https://www.sg-siken.com/"
+                                    title="情報セキュリティマネジメント試験ドットコム">情報セキュリティマネジメント試験ドットコム</a>
+                            <li><a href="https://www.fe-siken.com/" title="基本情報技術者試験ドットコム">基本情報技術者試験ドットコム</a>
+                            <li><a href="https://www.sc-siken.com/" title="情報処理安全確保支援士ドットコム">情報処理安全確保支援士ドットコム</a>
+                            <li><a href="https://www.nw-siken.com/" title="ネットワークスペシャリストドットコム">ネットワークスペシャリストドットコム</a>
+                            <li><a href="https://www.db-siken.com/" title="データベーススペシャリストドットコム">データベーススペシャリストドットコム</a>
+                            <li><a href="https://www.pm-siken.com/" title="プロジェクトマネージャ試験ドットコム">プロジェクトマネージャ試験ドットコム</a>
+                        </ul>
+                        <h3>ITとは関係ありませんが…運営サイトの紹介</h3>
+                        <ul class="box menu full">
+                            <li><a href="https://fp3-siken.com/kakomon.php"
+                                    title="FP3級ドットコム-過去問道場">FP(ファイナンシャルプランナー)3級ドットコム</a>
+                            <li><a href="https://fp2-siken.com/kakomon.php"
+                                    title="FP2級ドットコム-過去問道場">FP(ファイナンシャルプランナー)2級ドットコム</a>
+                            <li><a href="https://fp1-siken.com/kakomon.php"
+                                    title="FP1級ドットコム-過去問道場">FP(ファイナンシャルプランナー)1級ドットコム</a>
+                            <li><a href="https://takken-siken.com/" title="宅建試験ドットコム">宅建試験ドットコム</a>
+                            <li><a href="https://chintaikanrishi-siken.com/" title="賃貸管理士試験ドットコム">賃貸管理士試験ドットコム</a>
+                            <li><a href="https://marksheet.me/" title="マークシート作成サービス">MarkSheet.me(マークシート作成サービス)</a>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- SIDECOL END -->
+            </div>
+        </div>
+        <!-- CONTENT END -->
+
+        <!-- FOOTER START -->
+        <footer id="footerWrap" class="centeringBox">
+            <div id="footer" class="centeringContent">
+                <div class="displaySelect"><span>表示： <b>PC</b> ｜ <a href="/s/">モバイル</a></span></div>
+                <nav class="footerContent">
+                    <h3>ap-siken.comについて</h3>
+                    <a href="/thissiteis.html">&raquo;利用規約</a>
+                    <a href="/privacypolicy.html">&raquo;プライバシーポリシー</a>
+                    <a href="/contact.html">&raquo;お問い合わせ</a>
+                    <a href="/config.html">&raquo;表示設定</a><br>
+                    <a href="/sitemap.html">&raquo;サイトマップ</a>
+                    <a href="/link.html">&raquo;リンク</a>
+                    <a href="/ads.html">&raquo;広告の掲載について</a>
+                </nav>
+                <div class="minilogo" title="応用情報技術者試験ドットコム"></div>
+            </div>
+        </footer>
+
+        <div id="footerBottomWrap" class="centeringBox">
+            <div id="footerBottom" class="centeringContent">
+                <small>&copy; 2010-2022　応用情報技術者試験ドットコム　All Rights Reserved.</small>
+            </div>
+        </div>
+        <!-- FOOTER END -->
+        <a href="#header" id="toTop"><span>&#9650;</span><br>Pagetop</a>
+
+        <!-- SCRIPT START -->
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="/js/ap.js"></script>
+        <script src="/js/jsInclude.js" async></script>
+        <script>
+            $(function () {
+
+                $('[data-update]').each(function () {
+                    var day_timeStamp = 86400 * 1000;
+                    var diff = Date.now() - ($(this).attr('data-update') * 1000);
+                    if (diff < (day_timeStamp / 24)) {
+                        $(this).html(Math.ceil(diff / (day_timeStamp / 24 / 60)) + '分前');
+                    } else if (diff < day_timeStamp) {
+                        $(this).html(Math.ceil(diff / (day_timeStamp / 24)) + '時間前');
+                    } else {
+                        $(this).html(Math.floor(diff / day_timeStamp) + '日前');
+                    }
+                })
+
+            })
+        </script>
+        <!-- SCRIPT END -->
+    </body>
+
+</html>
