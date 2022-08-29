@@ -19,7 +19,7 @@ RUN toml get ./Cargo.toml package.name | \
 RUN cargo test
 RUN cargo build --release
 
-FROM debian:bullseye-slim as prod
+FROM ghcr.io/linuxcontainers/debian-slim:11 as prod
 ARG APP=/usr/src/app
 
 RUN apt-get update \
